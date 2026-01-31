@@ -1,0 +1,139 @@
+# Project Rules for Windsurf AI Assistant
+
+## Project Overview
+This is the TRP 1 - MCP Setup Challenge workspace for demonstrating foundational qualities in configuring AI coding environments with MCP tools and rules.
+
+## Tech Stack
+- Primary IDE: Windsurf (AI-powered code editor)
+- MCP Server: Tenx MCP (for logging interactions)
+- Language: Markdown (documentation)
+- Environment: macOS
+
+## Project Structure
+```
+trp-mcp-challenge/
+├── .windsurf/
+│   └── rules.md           # This file - rules for Windsurf AI
+├── CLAUDE.md              # Legacy rules file
+└── CHALLENGE_REPORT.md    # Documentation of the challenge completion
+```
+
+## How I Work
+
+### Communication Style
+- Be terse and direct. Deliver fact-based progress updates.
+- Use bullet points and short paragraphs instead of long blocks of text.
+- Refer to me in second person, yourself in first person.
+- No acknowledgment phrases (e.g., "Great idea!", "I agree").
+- Jump straight into addressing requests without preamble.
+
+### Code Style & Conventions
+- Add all necessary imports at the top of files.
+- Never add or delete comments unless explicitly asked.
+- Use modern, idiomatic code patterns.
+- Prefer minimal, focused edits over large refactors.
+- Keep changes scoped and general-purpose.
+
+### Making Code Changes
+- Use edit tools for changes, never output code unless requested.
+- Code must be immediately runnable.
+- For very large edits (>300 lines), break into multiple smaller edits.
+- Use absolute file paths for all file references.
+
+### Task Management
+- Use todo list to track multi-step work.
+- Keep plans concise with one step in progress at a time.
+- Update plans when new constraints or discoveries emerge.
+- Only create notes/artifacts when they prevent rework.
+
+### Running Commands
+- Never use cd in commands. Specify directory via cwd parameter.
+- Check for existing dev servers before starting new ones.
+- Be careful with destructive operations.
+- Never auto-run unsafe commands.
+
+### Debugging Approach
+- Address root cause, not symptoms.
+- Add descriptive logging and error messages.
+- Create test functions to isolate problems.
+- Only make changes when certain of the solution.
+
+### Documentation
+- Never create .md documents unless explicitly asked.
+- When documenting, use proper Markdown formatting.
+- Use single backticks for code, fenced blocks for snippets.
+- Bold critical information, use proper section headings.
+
+## What I Expect From You
+
+### Exploration
+- Explore the codebase before making changes.
+- Use code_search for broad exploration tasks.
+- Use grep_search for targeted searches.
+- Verify assumptions with tools before proceeding.
+
+### Verification
+- Always verify relevance of IDE metadata before assuming connection.
+- Test changes thoroughly before marking complete.
+- Provide copy-pastable commands when verification tools unavailable.
+
+### Safety
+- Respect workspace boundaries - don't create clutter.
+- Check file existence before writing (use write_to_file only for new files).
+- Never modify files without reading them first.
+
+### Quality
+- Make absolutely no ungrounded assertions.
+- When uncertain, use tools to gather information.
+- Provide context when uncertain about requirements.
+
+## Common Workflows
+
+### Starting a New Task
+1. Read relevant files to understand context
+2. Create/update todo list if multi-step
+3. Use code_search for exploration if needed
+4. Implement minimal, focused changes
+5. Verify and test thoroughly
+
+### Handling Bugs
+1. Identify root cause through investigation
+2. Add targeted logging if needed
+3. Implement minimal fix
+4. Add regression tests
+5. Verify fix resolves issue
+
+### Research Tasks
+1. Use web search tools for external information
+2. Synthesize findings concisely
+3. Apply relevant insights to the task
+4. Document key learnings if valuable
+
+## MCP Tools Available
+- exa: Web search and code context search
+- code_search: Parallel codebase exploration
+- grep_search: Targeted code searching
+- edit/multi_edit: File modifications
+- run_command: Terminal operations
+- Various file operations (read, write, list, find)
+
+## Key Principles
+1. **Minimal changes**: Smallest effective fix
+2. **Verification first**: Test before assuming
+3. **Context awareness**: Understand before acting
+4. **Safety first**: Never auto-run unsafe commands
+5. **Clear communication**: Direct, factual responses
+6. **Tool mastery**: Use appropriate tools for each task
+
+## When to Ask for Help
+- When genuinely uncertain about intent or requirements
+- When task requires user approval for destructive operations
+- When multiple valid approaches exist and user preference unclear
+- When encountering unexpected errors that need investigation
+
+## Success Criteria
+- Code works as intended
+- Changes are minimal and focused
+- No unnecessary files created
+- Proper documentation when requested
+- All tests pass (if applicable)
