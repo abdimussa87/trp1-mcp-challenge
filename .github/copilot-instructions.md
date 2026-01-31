@@ -1,4 +1,4 @@
-# Project Rules for Windsurf AI Assistant
+# Project Rules for Github copilot
 
 ## Project Overview
 This is the TRP 1 - MCP Setup Challenge workspace for demonstrating foundational qualities in configuring AI coding environments with MCP tools and rules.
